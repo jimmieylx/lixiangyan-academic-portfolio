@@ -6,9 +6,12 @@
   --muted: #5d6676;
   --soft: #8a94a6;
   --line: #dce3ee;
-  --accent: #9f1239;
-  --accent-deep: #7f0d2d;
-  --accent-soft: #f9e8ee;
+  --tsinghua-purple: #660874;
+  --tsinghua-gold: #e6c84f;
+  --accent: var(--tsinghua-purple);
+  --accent-deep: #4e0659;
+  --accent-soft: #f6edf8;
+  --gold-soft: #fff8d9;
   --blue-gray: #2f4858;
   --shadow: 0 22px 60px rgba(17, 24, 39, 0.1);
   --max: 1280px;
@@ -207,11 +210,13 @@ h1 {
 .button-primary {
   background: var(--accent);
   color: #fff;
+  border: 1px solid var(--accent);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
   background: var(--accent-deep);
+  border-color: var(--accent-deep);
   transform: translateY(-1px);
 }
 
@@ -302,7 +307,7 @@ h1 {
   width: 34px;
   height: 34px;
   border-radius: 6px;
-  background: var(--accent-soft);
+  background: var(--gold-soft);
   color: var(--accent);
 }
 
@@ -452,9 +457,9 @@ h1 {
   gap: 7px;
   min-height: 30px;
   padding: 0 10px;
-  border: 1px solid rgba(159, 18, 57, 0.2);
+  border: 1px solid rgba(102, 8, 116, 0.18);
   border-radius: 999px;
-  background: var(--accent-soft);
+  background: var(--gold-soft);
   color: var(--accent);
   font-size: 12px;
   font-weight: 850;
@@ -521,8 +526,8 @@ h1 {
   min-height: 30px;
   padding: 0 10px;
   border-radius: 999px;
-  background: var(--surface-strong);
-  color: var(--blue-gray);
+  background: var(--gold-soft);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 850;
 }
