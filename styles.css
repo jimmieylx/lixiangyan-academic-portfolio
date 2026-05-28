@@ -416,6 +416,18 @@ h1 {
   line-height: 1.25;
 }
 
+.publication h3 a {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+.publication h3 a:hover,
+.publication h3 a:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .publication .journal {
   display: flex;
   flex-wrap: wrap;
@@ -434,13 +446,6 @@ h1 {
   color: var(--muted);
 }
 
-.pub-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
-}
-
 .pub-tag {
   display: inline-flex;
   align-items: center;
@@ -456,14 +461,10 @@ h1 {
   line-height: 1;
 }
 
-.pub-tag svg {
-  width: 15px;
-  height: 15px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.9;
+.pub-tag span {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .timeline {
