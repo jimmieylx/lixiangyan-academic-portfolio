@@ -509,9 +509,9 @@ h1 {
 }
 
 .project-meta {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 8px;
+  justify-items: start;
   margin-top: 16px;
 }
 
